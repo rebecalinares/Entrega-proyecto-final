@@ -1,0 +1,91 @@
+.main{
+    .new__arrivals{
+        background-color: map-get($colores , negro);
+        padding: 45px;
+        text-align: center;
+        b{
+            font-size: x-large;
+            color: map-get($colores , blanco);
+            font-family:$fontLexendEnda;
+        }
+    }
+    .new__arrivals__a{
+        background-color: map-get($colores , amarillo);
+        .p1{
+            font-size: 80px;
+            font-family: $fontLexendEnda;
+            color: map-get($colores , blanco);
+            text-shadow: 0 0 12px #000;
+            padding-left: 10rem;
+        }
+        .p2{
+            font-size: 80px;
+            font-family:$fontLexendEnda;
+            color: map-get($colores , blanco);
+            text-align: right;
+            text-shadow: 0 0 12px #000;
+            padding-right: 10rem;
+        }
+    }
+    .contenido{
+        background-color: map-get($colores , blanco);
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-gap: 20px;
+        margin: 55px;
+        .gridItem{
+            width: 18.75rem;
+        }
+        img{
+            width: 80%;
+            height: 100%;
+        }
+    }
+}
+
+
+
+/*INICIO RESPONSIVE NEW ARRIVAL*/
+@media screen and (max-width:763px){
+    .main .new__arrivals__a .p1{
+        font-size: 60px;
+        padding-left: 8rem;
+    }
+    .main .new__arrivals__a .p2{
+        font-size: 60px;
+        padding-left: 8rem;
+    }
+    .main .contenido{
+        background-color: map-get($colores , blanco);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-gap: 10px;
+        margin: 40px;
+    }
+
+}
+
+@media screen and (max-width:585px){
+    .main .new__arrivals__a .p1{
+        font-size: 40px;
+        padding-left: 8rem;
+    }
+    .main .new__arrivals__a .p2{
+        font-size: 40px;
+        padding-left: 10rem;
+    }
+}
+@media screen and (max-width:491px){
+    .main .new__arrivals__a .p1{
+        font-size: 35px;
+        padding-left: 3rem;
+    }
+    .main .new__arrivals__a .p2{
+        font-size: 35px;
+        padding-left: 10rem;
+    }
+}

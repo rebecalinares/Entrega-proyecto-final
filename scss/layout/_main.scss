@@ -1,0 +1,90 @@
+.main{
+    .fondo__principal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 50rem;
+        color: map-get($colores , blanco);
+        background-image: url(../../img/imagenprincipal.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-size: xx-large;
+        font-family:$fontLexendEnda;
+    }
+    .nueva{
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .coleccion{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    button{
+        margin-top: 2rem;
+    }
+    .promociones{
+        background-color: map-get($colores , grisClaro);
+        font-family:$fontLexendEnda;
+            .promos__contenedor{
+                display: grid;
+                margin: 0 auto;
+                grid-template-columns: repeat(3, 1fr);
+                justify-content: center; 
+                    .promos__item{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding: 1rem; 
+                            .promos__toppic{
+                                margin: auto;
+                                padding: 1rem;
+                                color: #2D2D2D;
+                                font-size: 14px;
+                                font-style: normal;
+                                text-align: center; 
+                            }
+                    }
+            }
+    }
+}
+
+
+@media screen and (max-width:763px){
+    .main .fondo__principal{
+        height: 40rem;
+    }
+    .main .nueva{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .main .coleccion{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .main .promociones .promos__contenedor  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:585px){
+    .main .fondo__principal{
+        height: 35rem;
+    }
+    .main .nueva{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .main .coleccion{
+        text-align: center;
+        font-size: 1rem;
+    }
+}

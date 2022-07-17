@@ -1,0 +1,57 @@
+@mixin size($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+
+.main{
+    .about{
+        background-color: map-get($colores , negro);
+        padding: 40px;
+        p{
+            font-size: x-large;
+            color: map-get($colores , blanco);
+            font-family:$fontLexendEnda;
+            text-align: center;
+        }
+    }
+    .presentacion{
+        .nosotros{
+            background-color: map-get($colores , blanco);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            margin-top: 5rem;
+                .presentacion__p{
+                        font-family: $fontLexendEnda;
+                        margin: 3rem;
+                        font-size: medium;
+                        text-align: right;
+                }
+        }
+    }
+}
+
+
+
+/*INICIO RESPONSIVE ABOUTUS*/
+@media screen and (max-width: 600px){
+    .presentacion--invertido, .presentacion__contenedor{
+        padding: 1rem;
+        grid-template-columns: 1fr;} 
+    .img__work{
+        @include size(300px,300px)}   
+    .img__contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;}
+}
+
+
+
+
+
+
