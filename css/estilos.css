@@ -105,7 +105,7 @@ button:active {
   flex-direction: column;
   height: 50rem;
   color: white;
-  background-image: url(../../img/imagenprincipal.jpg);
+  background-image: url(../img/imagenprincipal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -439,6 +439,9 @@ button:active {
     padding-left: 10rem;
   }
 }
+.main {
+  /*INICIO RESPONSIVE BAGS*/
+}
 .main .bags {
   background-color: black;
   padding: 40px;
@@ -449,53 +452,28 @@ button:active {
   font-family: "Lexend Exa", sans-serif;
   text-align: center;
 }
-.main .CardVenta {
-  background-color: #F9F8F8;
-  padding: 1rem;
-}
-.main .CardVenta .container-fluid .row .cardVenta__contenedor {
+.main .cards {
   background-color: #F9F8F8;
   display: flex;
-  margin: 0 auto;
-  justify-content: space-evenly;
-  position: relative;
-  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.main .CardVenta .container-fluid .row .cardVenta__contenedor .card__contenedor {
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0;
-  transform: scale(0.95);
-  transition: box-shadow 0.5s, transform 0.5s;
+.main .cards .card {
+  align-items: center;
 }
-.main .CardVenta .container-fluid .row .cardVenta__contenedor .CardVenta__producto {
-  display: flex;
-  margin: 0 auto;
-  justify-content: baseline;
-  align-content: center;
-  position: relative;
+.main .cards .card .card-body .card-title {
+  text-align: center;
 }
-.main .CardVenta .container-fluid .row .cardVenta__contenedor .CardVenta__producto img {
-  width: 250px;
-  height: 350px;
-}
-.main .CardVenta .container-fluid .row .cardVenta__contenedor .CardVenta__producto button {
-  margin-top: 20px;
+@media screen and (max-width: 1250px) {
+  .main .main .CardVenta .container-fluid .row .cardVenta__contenedor {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+  }
 }
 
-/*INICIO RESPONSIVE BAGS*/
-@media screen and (max-width: 600px) {
-  .cardVenta__contenedor {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    height: auto;
-  }
-}
-@media screen and (max-width: 391px) {
-  .cardVenta__contenedor {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0rem;
-  }
-}
 .main .about {
   background-color: black;
   padding: 40px;
@@ -513,30 +491,26 @@ button:active {
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-evenly;
-  align-items: flex-end;
-  margin-top: 5rem;
+  align-items: center;
+  margin: 4rem;
+}
+.main .presentacion .nosotros img {
+  width: 25rem;
+  height: 28rem;
 }
 .main .presentacion .nosotros .presentacion__p {
   font-family: "Lexend Exa", sans-serif;
-  margin: 3rem;
-  font-size: medium;
-  text-align: right;
+  margin-left: 3rem;
 }
 
 /*INICIO RESPONSIVE ABOUTUS*/
-@media screen and (max-width: 600px) {
-  .presentacion--invertido, .presentacion__contenedor {
-    padding: 1rem;
-    grid-template-columns: 1fr;
+@media screen and (max-width: 1100px) {
+  .main .presentacion .nosotros {
+    flex-direction: column;
   }
-  .img__work {
-    width: 300px;
-    height: 300px;
-  }
-  .img__contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  .main .presentacion .nosotros .presentacion__p {
+    margin-top: 5rem;
+    margin-left: 0rem;
   }
 }
 .main .contacto {
@@ -550,10 +524,7 @@ button:active {
   text-align: center;
 }
 .main .contacto__form {
-  padding-top: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 100px;
+  padding: 50px 100px 100px 100px;
 }
 .main .contacto__form .caja__form form {
   margin: 50px;
@@ -585,10 +556,13 @@ button:active {
   background-color: #45a049;
 }
 
-@media screen and (max-width: 391px) {
-  .contacto {
-    padding-top: 0px;
-    padding-left: 30px;
-    padding-right: 15px;
+@media screen and (max-width: 585px) {
+  .main .contacto__form {
+    padding: 25px 50px 50px 50px;
+  }
+}
+@media screen and (max-width: 585px) {
+  .main .contacto__form {
+    padding: 25px 25px 25px 50px;
   }
 }/*# sourceMappingURL=estilos.css.map */

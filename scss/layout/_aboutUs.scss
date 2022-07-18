@@ -23,31 +23,33 @@
             flex-wrap: nowrap;
             align-content: center;
             justify-content: space-evenly;
-            align-items: flex-end;
-            margin-top: 5rem;
+            align-items: center;
+            margin: 4rem;
+                img{
+                    width: 25rem;
+                    height: 28rem;
+                }
                 .presentacion__p{
                         font-family: $fontLexendEnda;
-                        margin: 3rem;
-                        font-size: medium;
-                        text-align: right;
+                        margin-left: 3rem;
+
                 }
         }
+
     }
 }
 
 
 
 /*INICIO RESPONSIVE ABOUTUS*/
-@media screen and (max-width: 600px){
-    .presentacion--invertido, .presentacion__contenedor{
-        padding: 1rem;
-        grid-template-columns: 1fr;} 
-    .img__work{
-        @include size(300px,300px)}   
-    .img__contenedor{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;}
+@media screen and (max-width: 1100px){
+    .main .presentacion .nosotros{
+        flex-direction: column;
+        .presentacion__p{
+            margin-top: 5rem;
+            margin-left: 0rem;
+        }
+    }
 }
 
 

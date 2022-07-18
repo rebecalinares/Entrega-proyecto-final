@@ -10,10 +10,7 @@
         }
     }
     .contacto__form{
-        padding-top: 50px;
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-bottom: 100px;
+        padding: 50px 100px 100px 100px;
         .caja__form{
             form{
                 margin: 50px;
@@ -49,9 +46,14 @@
 }
 
 
-@media screen and (max-width: 391px) {
-    .contacto{
-        padding-top: 0px;
-        padding-left: 30px;
-        padding-right: 15px}
+@media screen and (max-width:585px){
+    .main .contacto__form{
+        padding: 25px 50px 50px 50px;
+    }
+}
+
+@media screen and (max-width:585px){
+    .main .contacto__form{
+        padding: 25px 25px 25px 50px;
+    }
 }
