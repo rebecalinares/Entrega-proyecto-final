@@ -60,6 +60,9 @@
             color: map-get($colores , blanco);
             font-size: smaller;
             font-family: $fontLexendEnda;
+                p{
+                    margin-bottom: 0rem;
+                }
         }
 }
 
